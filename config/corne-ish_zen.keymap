@@ -42,10 +42,10 @@
             label = "LOWER";
 
             // -----------------------------------------------------------------------------------------
-            // |  TRANS |  <  | UP  |  -  | VOLU|  {  |   |  7  |  8   |  9  |  >  |TRANS|TRANS |
-            // |  TRANS | [   | LEFT| DOWN| RGHT| VOLD|   |  4  |  5   |  6  |  ]  |TRANS|TRANS |
-            // |  TRANS | {   | PRV | PLAY| NEXT| MUTE|   | 0/1 |  2   |  3  |  }  |TRANS|TRANS |
-            //                       |TRANS|TRANS|TRANS|   |TRANS| RSHFT|TRANS|
+            // | TRANS |TRANS|TRANS| UP  |TRANS| VOLU|   |  =  |  7   |  8  |  9  |TRANS| TRANS |
+            // | TRANS |  {  | LEFT| DOWN| RGHT| VOLD|   |  -  |  4   |  5  |  6  |  }  | TRANS |
+            // | TRANS |  [  | PRV | PLAY| NEXT| MUTE|   |  0  |  1   |  2  |  3  |  ]  | TRANS |
+            //                       |TRANS|TRANS|TRANS|  |TRANS| ADJ  |TRANS|
 
             bindings = <
 &trans  &trans  &trans  &kp UP_ARROW  &trans  &kp C_VOLUME_UP  &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans  &trans  &kp LEFT_BRACE  &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_VOLUME_DOWN  &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RIGHT_BRACE  &trans  &trans  &kp LEFT_BRACKET  &kp C_PREV  &kp C_PP  &kp C_NEXT  &kp C_MUTE  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -55,14 +55,14 @@
         raise_layer {
             label = "RAISE";
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         adjust_layer {
             label = "ADJUST";
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &trans  &none  &none
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
